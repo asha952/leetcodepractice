@@ -1,0 +1,23 @@
+1. 258 add digits
+input: an int
+function: add individual digits repeatedly of output
+output: a single digit
+
+algorithm: split the number by digits
+            add them
+            check if result is single digit
+            if yes, return that
+            if not, repeat
+
+2. 1342. Number of Steps to Reduce a Number to Zero
+input: an int
+function: reduce number to 0 either by dividing by 2 or subtracting 1
+output: number of steps to do so
+
+algorithm: check to see if number is div by 2
+            if yes, divide by 2 repeatedly
+                keep increasing counter
+                if answer is 1, subtract
+                    return counter
+            if no, subtract by 1,
+                check again to first part
